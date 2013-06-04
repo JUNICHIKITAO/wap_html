@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript"></script>
+		<title>wap</title>
+	</head>
+	<body>
+		<div id="header">
+			<div id="wrap">
+				<h1 id="logo"><a> <img src="img/logo.png" alt="WAP" /> </a></h1><!-- /logo -->
+				<div id="title">
+					<p>
+						WindowsStoreアプリのレビューブログ
+					</p>
+				</div><!-- /title -->
+				<div id="global_menu">
+					<p id="aboutme_icon">
+						<a> <img src="img/icon-about.png" alt="AboutMe"
+						onMouseOver="this.src='img/icon-about_on.png'"
+						onMouseOut="this.src='img/icon-about.png'" /> </a>
+					</p>
+					<p id="ranking_icon">
+						<a> <img src="img/icon-ranking.png" alt="RankingPage"
+						onMouseOver="this.src='img/icon-ranking_on.png'"
+						onMouseOut="this.src='img/icon-ranking.png'" /> </a>
+					</p>
+					<p id="contact_icon">
+						<a> <img src="img/icon-contact.png" alt="ContactForm"
+						onMouseOver="this.src='img/icon-contact_on.png'"
+						onMouseOut="this.src='img/icon-contact.png'" /> </a>
+					</p>
+				</div><!-- /global_menu -->
+				<div id="search_form_area">
+					<form method="get" id="searchform" method="get" action="<?php bloginfo('url'); ?>/">
+						<!--<label class="hidden" for="s"><?php _e('Search:'); ?></label>-->
+						<div id="searchbox">
+							<input type="image" id="searchsubmit" src="img/search.png" />
+							<input type="text" style="" name="s" id="s" />
+						</div>
+					</form>
+				</div><!-- /search_form -->
+			</div><!-- /wrap -->
+		</div><!-- /header -->
+		<div id="contents"></div>
+		<div id="sidemenu"></div>
+		<div id="footer"></div>
+	</body>
+</html>
