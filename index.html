@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<div id="wrap">
+			<div id="wrap" class="clearfix">
 				<h1 id="logo"><a> <img src="img/logo.png" alt="WAP" /> </a></h1><!-- /logo -->
 				<div id="title">
 					<p>
@@ -16,7 +16,7 @@
 					</p>
 				</div><!-- /title -->
 				<div id="global_menu">
-					<p id="aboutme_icon">
+					<!--<p id="aboutme_icon">
 						<a> <img src="img/icon-about.png" alt="AboutMe"
 						onMouseOver="this.src='img/icon-about_on.png'"
 						onMouseOut="this.src='img/icon-about.png'" /> </a>
@@ -30,21 +30,256 @@
 						<a> <img src="img/icon-contact.png" alt="ContactForm"
 						onMouseOver="this.src='img/icon-contact_on.png'"
 						onMouseOut="this.src='img/icon-contact.png'" /> </a>
-					</p>
+					</p>-->
 				</div><!-- /global_menu -->
 				<div id="search_form_area">
 					<form method="get" id="searchform" method="get" action="<?php bloginfo('url'); ?>/">
 						<!--<label class="hidden" for="s"><?php _e('Search:'); ?></label>-->
 						<div id="searchbox">
-							<input type="image" id="searchsubmit" src="img/search.png" />
+							<input type="image" id="searchsubmit" src="img/search.png" alt="search" />
 							<input type="text" style="" name="s" id="s" />
-						</div>
+						</div><!-- /searchbox -->
 					</form>
 				</div><!-- /search_form -->
 			</div><!-- /wrap -->
 		</div><!-- /header -->
-		<div id="contents"></div>
-		<div id="sidemenu"></div>
-		<div id="footer"></div>
+		<!--******************************ここからメインカラム***************************************-->
+		<div id="maincolumn">
+			<div class="random_topics clearfix">
+				<dl class="topics">
+					<div class="topics_disp">
+						<img src="img/random_img.png" />
+						<p class="topics_text">
+							これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ
+						</p>
+					</div>
+				</dl>
+				<dl class="topics" id="center_margin">
+					<div class="topics_disp">
+						<img src="img/random_img.png" />
+						<p class="topics_text">
+							これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ
+						</p>
+					</div>
+				</dl>
+				<dl class="topics">
+					<div class="topics_disp">
+						<img src="img/random_img.png" />
+						<p class="topics_text">
+							これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ
+						</p>
+					</div>
+				</dl>
+			</div><!-- /random_topics -->
+			<div id="warap_maincon" class="clearfix">
+				<div id="newpage_list">
+					<h1 id="newpage"><strong>新着記事一覧</strong></h1>
+				</div><!-- /newpage_list -->
+				<div class="page_navi clearfix"><!-- ページナビゲーションエリア（上段） -->
+					<ul>
+						<li class="highlight">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li class="last highlight">Last</li>
+					</ul>
+				</div><!-- /page_navi -->
+				<div id="post_area">
+					<div class="newpost">
+						<div class="post_title">
+							<h2>これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ</h2>
+							<img class="label_new" src="img/label_new.png" />
+						</div>
+						<div class="post_body clearfix">
+							<img src="img/post_body.jpg" />
+							<p class="post_body_text">
+								windows8の新しい特徴のひとつに、windows8スタイルのUIで動く「windowsストアアプリ」（以下ストアアプリ）
+								がある。ストアアプリはwindowsストアでしか販売・提供されず、すべてがマイクロソフトの審査を受けたアプリケーションだ。
+								今回の特集は、ストアアプリの紹介特集であ…
+							</p>
+							<p class="post_date">2013/6/19 ジャンル：ビジネス</p>
+							<div class="button">
+								<p>続きを見る</p>
+							</div>
+						</div>
+					</div>
+					<div class="newpost">
+						<div class="post_title">
+							<h2>これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ</h2>
+							<img class="label_new" src="img/label_new.png" />
+						</div>
+						<div class="post_body clearfix">
+							<img src="img/post_body.jpg" />
+							<p class="post_body_text">
+								windows8の新しい特徴のひとつに、windows8スタイルのUIで動く「windowsストアアプリ」（以下ストアアプリ）
+								がある。ストアアプリはwindowsストアでしか販売・提供されず、すべてがマイクロソフトの審査を受けたアプリケーションだ。
+								今回の特集は、ストアアプリの紹介特集であ…
+							</p>
+							<p class="post_date">2013/6/19ジャンル：ビジネス</p>
+							<div class="button">
+								<p>続きを見る</p>
+							</div>
+						</div>
+					</div>
+					<div class="newpost">
+						<div class="post_title">
+							<h2>これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ</h2>
+							<img class="label_new" src="img/label_new.png" />
+						</div>
+						<div class="post_body clearfix">
+							<img src="img/post_body.jpg" />
+							<p class="post_body_text">
+								windows8の新しい特徴のひとつに、windows8スタイルのUIで動く「windowsストアアプリ」（以下ストアアプリ）
+								がある。ストアアプリはwindowsストアでしか販売・提供されず、すべてがマイクロソフトの審査を受けたアプリケーションだ。
+								今回の特集は、ストアアプリの紹介特集であ…
+							</p>
+							<p class="post_date">2013/6/19 ジャンル：ビジネス</p>
+							<div class="button">
+								<p>続きを見る</p>
+							</div>
+						</div>
+					</div>
+					<div class="newpost">
+						<div class="post_title">
+							<h2>これは入れたいwindows8の新定番アプリ特集第一回-さすがにデキがいい　マイクロソフト製windows8アプリ</h2>
+							<img class="label_new" src="img/label_new.png" />
+						</div>
+						<div class="post_body clearfix">
+							<img src="img/post_body.jpg" />
+							<p class="post_body_text">
+								windows8の新しい特徴のひとつに、windows8スタイルのUIで動く「windowsストアアプリ」（以下ストアアプリ）
+								がある。ストアアプリはwindowsストアでしか販売・提供されず、すべてがマイクロソフトの審査を受けたアプリケーションだ。
+								今回の特集は、ストアアプリの紹介特集であ…
+							</p>
+							<p class="post_date">2013/6/19 ジャンル：ビジネス</p>
+							<div class="button">
+								<p>続きを見る</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="page_navi clearfix"><!-- ページナビゲーションエリア（下段） -->
+					<ul>
+						<li class="highlight">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li class="last highlight">Last</li>
+					</ul>
+				</div><!-- /page_navi -->
+			</div><!-- /warap_maincon -->
+		</div><!-- /maincolumn -->
+		<div id="sidemenu">
+			<img id="img1" src="img/afi_img1.jpeg" />
+			<ul class="category_menu">
+				<li class="menu_title">ジャンル別カテゴリー</li>
+				<li class="category">書籍</li>
+				<li class="category">ビジネス</li>
+				<li class="category">教育</li>
+				<li class="category">エンターテイメント</li>
+				<li class="category">マネー</li>
+				<li class="category">グルメ</li>
+				<li class="category">ゲーム</li>
+				<li class="category">政治</li>
+				<li class="category">ヘルスケアとフィットネス</li>
+				<li class="category">ライフスタイル</li>
+				<li class="category">写真や動画</li>
+				<li class="category">ニュースと天気</li>
+				<li class="category">写真</li>
+				<li class="category">仕事効率化</li>
+				<li class="category">セキュリティ</li>
+				<li class="category">ショッピング</li>
+				<li class="category">ソーシャル</li>
+				<li class="category">スポーツ</li>
+				<li class="category">ツール</li>
+				<li class="category">旅行</li>
+			</ul>
+			<ul class="ranking_menu clearfix">
+				<li class="menu_title">人気記事ランキング</li>
+				<li class="ranking" id="first_box">
+					<div class="ranking_div clearfix">
+						<img src="img/ranking_img.png" />
+						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+						<p class="views">2000views</p>
+					</div>
+				</li>
+				<li class="ranking stripe">
+					<div class="ranking_div">
+						<img src="img/ranking_img.png" />
+						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+						<p class="views">2000views</p>
+					</div>
+				</li>
+				<li class="ranking">
+					<div class="ranking_div">
+						<img src="img/ranking_img.png" />
+						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+						<p class="views">2000views</p>
+					</div>
+				</li>
+				<li class="ranking stripe">
+					<div class="ranking_div">
+						<img src="img/ranking_img.png" />
+						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+						<p class="views">2000views</p>
+					</div>
+				</li>
+				<li class="ranking">
+					<div class="ranking_div">
+						<img src="img/ranking_img.png" />
+						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+						<p class="views">2000views</p>
+					</div>
+				</li>
+			</ul>
+			<img id="img2" src="img/afi_img2.jpeg" />
+		</div><!-- /sidemenu -->
+		<div class="clearfix"></div>
+		<!--********************************ここからfooter**********************************-->
+		<div id="footer" class="clearfix">
+			<div id="footer_warap" class="clearfix">
+				<div id="aboutme">
+					<h3>このサイトについて</h3>
+					<p>
+						WAP(Windows Appli Preview)はwindows8アプリに関するレビューサイトです。
+						学生3名で運営しているので、基本は無料アプリのレビューを不定期に投稿していきます。
+					</p>
+					<p>
+						「ぜひこのアプリを紹介してほしい！」という開発者様からの売り込みも随時募集しておりますので、
+						お問い合わせフォームよりその旨のメールをお送りください。
+					</p>
+					<p>
+						このサイトについての質問、内容の間違い等もお問い合わせフォームよりご連絡いただけると助かります。
+					</p>
+				</div>
+				<div id="contact">
+					<h3>お問い合わせ</h3>
+					<form>
+						<div>
+							<img id="img_name" alt="名前" src="img/form_name.png" />
+							<input type="text" name="name" />
+						</div>
+						<div>
+							<img id="img_mail" src="img/form_address.png" />
+							<input type="text" name="mail" size="55" />
+						</div>
+						<div id="textarea_div">
+							<img id="img_text" src="img/form_text.png" />
+							<textarea name="comments"></textarea>
+						</div>
+						<div><p id="submit">送信</p></div>
+					</form>
+				</div>
+				<small>©　WAP 2013</small>
+			</div>
+		</div>
 	</body>
 </html>
