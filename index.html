@@ -11,9 +11,9 @@
 			<div id="wrap" class="clearfix">
 				<h1 id="logo"><a> <img src="img/logo.png" alt="WAP" /> </a></h1><!-- /logo -->
 				<div id="title">
-					<p>
+					<h1>
 						WindowsStoreアプリのレビューブログ
-					</p>
+					</h1>
 				</div><!-- /title -->
 				<div id="global_menu">
 					<!--<p id="aboutme_icon">
@@ -32,19 +32,15 @@
 						onMouseOut="this.src='img/icon-contact.png'" /> </a>
 					</p>-->
 				</div><!-- /global_menu -->
-				<div id="search_form_area">
-					<form method="get" id="searchform" method="get" action="<?php bloginfo('url'); ?>/">
-						<!--<label class="hidden" for="s"><?php _e('Search:'); ?></label>-->
-						<div id="searchbox">
-							<input type="image" id="searchsubmit" src="img/search.png" alt="search" />
-							<input type="text" style="" name="s" id="s" />
-						</div><!-- /searchbox -->
-					</form>
-				</div><!-- /search_form -->
+				<form method="get" id="searchform" action="<?php bloginfo('url'); ?>/">
+					<!--<label class="hidden" for="s"><?php _e('Search:'); ?></label>-->
+					<input type="image" id="searchsubmit" src="img/search.png" alt="search" />
+					<input type="text" id="searchword" name="s" />
+				</form>
 			</div><!-- /wrap -->
 		</div><!-- /header -->
 		<!--******************************ここからメインカラム***************************************-->
-		<div id="maincolumn">
+		<div id="maincolumn" class="clearfix">
 			<div class="random_topics clearfix">
 				<dl class="topics">
 					<div class="topics_disp">
@@ -158,7 +154,7 @@
 							<p class="post_date">2013/6/19 ジャンル：ビジネス</p>
 							<div class="button">
 								<p>続きを見る</p>
-							</div>
+							</div>A
 						</div>
 					</div>
 				</div>
@@ -176,80 +172,85 @@
 					</ul>
 				</div><!-- /page_navi -->
 			</div><!-- /warap_maincon -->
+			<div id="sidemenu">
+				<img id="img1" src="img/afi_img1.jpeg" />
+				<ul class="category_menu">
+					<div class="menu_title">
+						<li>ジャンル別カテゴリー<span id="shadow"></span></li>
+					</div>
+					<!--<li class="menu_title">ジャンル別カテゴリー</li>-->
+					<li class="category">書籍</li>
+					<li class="category">ビジネス</li>
+					<li class="category">教育</li>
+					<li class="category">エンターテイメント</li>
+					<li class="category">マネー</li>
+					<li class="category">グルメ</li>
+					<li class="category">ゲーム</li>
+					<li class="category">政治</li>
+					<li class="category">ヘルスケアとフィットネス</li>
+					<li class="category">ライフスタイル</li>
+					<li class="category">写真や動画</li>
+					<li class="category">ニュースと天気</li>
+					<li class="category">写真</li>
+					<li class="category">仕事効率化</li>
+					<li class="category">セキュリティ</li>
+					<li class="category">ショッピング</li>
+					<li class="category">ソーシャル</li>
+					<li class="category">スポーツ</li>
+					<li class="category">ツール</li>
+					<li class="category">旅行</li>
+				</ul>
+				<ul class="ranking_menu clearfix">
+					<div class="menu_title">
+						<li>人気記事ランキング<span id="shadow"></span></li>
+					</div>
+					<li class="ranking" id="first_box">
+						<div class="ranking_div clearfix">
+							<img src="img/ranking_img.png" />
+							<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+							<p class="views">2000views</p>
+						</div>
+					</li>
+					<li class="ranking stripe">
+						<div class="ranking_div">
+							<img src="img/ranking_img.png" />
+							<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+							<p class="views">2000views</p>
+						</div>
+					</li>
+					<li class="ranking">
+						<div class="ranking_div">
+							<img src="img/ranking_img.png" />
+							<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+							<p class="views">2000views</p>
+						</div>
+					</li>
+					<li class="ranking stripe">
+						<div class="ranking_div">
+							<img src="img/ranking_img.png" />
+							<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+							<p class="views">2000views</p>
+						</div>
+					</li>
+					<li class="ranking">
+						<div class="ranking_div">
+							<img src="img/ranking_img.png" />
+							<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
+							<p class="views">2000views</p>
+						</div>
+					</li>
+				</ul>
+				<img id="img2" src="img/afi_img2.jpeg" />
+			</div><!-- /sidemenu -->
 		</div><!-- /maincolumn -->
-		<div id="sidemenu">
-			<img id="img1" src="img/afi_img1.jpeg" />
-			<ul class="category_menu">
-				<li class="menu_title">ジャンル別カテゴリー</li>
-				<li class="category">書籍</li>
-				<li class="category">ビジネス</li>
-				<li class="category">教育</li>
-				<li class="category">エンターテイメント</li>
-				<li class="category">マネー</li>
-				<li class="category">グルメ</li>
-				<li class="category">ゲーム</li>
-				<li class="category">政治</li>
-				<li class="category">ヘルスケアとフィットネス</li>
-				<li class="category">ライフスタイル</li>
-				<li class="category">写真や動画</li>
-				<li class="category">ニュースと天気</li>
-				<li class="category">写真</li>
-				<li class="category">仕事効率化</li>
-				<li class="category">セキュリティ</li>
-				<li class="category">ショッピング</li>
-				<li class="category">ソーシャル</li>
-				<li class="category">スポーツ</li>
-				<li class="category">ツール</li>
-				<li class="category">旅行</li>
-			</ul>
-			<ul class="ranking_menu clearfix">
-				<li class="menu_title">人気記事ランキング</li>
-				<li class="ranking" id="first_box">
-					<div class="ranking_div clearfix">
-						<img src="img/ranking_img.png" />
-						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
-						<p class="views">2000views</p>
-					</div>
-				</li>
-				<li class="ranking stripe">
-					<div class="ranking_div">
-						<img src="img/ranking_img.png" />
-						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
-						<p class="views">2000views</p>
-					</div>
-				</li>
-				<li class="ranking">
-					<div class="ranking_div">
-						<img src="img/ranking_img.png" />
-						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
-						<p class="views">2000views</p>
-					</div>
-				</li>
-				<li class="ranking stripe">
-					<div class="ranking_div">
-						<img src="img/ranking_img.png" />
-						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
-						<p class="views">2000views</p>
-					</div>
-				</li>
-				<li class="ranking">
-					<div class="ranking_div">
-						<img src="img/ranking_img.png" />
-						<p>WordPressではじめてテーマをカスタマイズ・自作するときありがちな10のつまずき</p>
-						<p class="views">2000views</p>
-					</div>
-				</li>
-			</ul>
-			<img id="img2" src="img/afi_img2.jpeg" />
-		</div><!-- /sidemenu -->
-		<div class="clearfix"></div>
+		<div class="clearfix"></div><!-- floatクリア用 -->
 		<!--********************************ここからfooter**********************************-->
-		<div id="footer" class="clearfix">
+		<div id="footer">
 			<div id="footer_warap" class="clearfix">
 				<div id="aboutme">
-					<h3>このサイトについて</h3>
+					<img src="img/h1_about.jpg" />
 					<p>
-						WAP(Windows Appli Preview)はwindows8アプリに関するレビューサイトです。
+						WAP(Windows Appli Preview)はwindows8アプリに関するレビューサイトです。<br />
 						学生3名で運営しているので、基本は無料アプリのレビューを不定期に投稿していきます。
 					</p>
 					<p>
@@ -261,7 +262,7 @@
 					</p>
 				</div>
 				<div id="contact">
-					<h3>お問い合わせ</h3>
+					<img src="img/h1_contact.jpg" />
 					<form>
 						<div>
 							<img id="img_name" alt="名前" src="img/form_name.png" />
@@ -275,11 +276,12 @@
 							<img id="img_text" src="img/form_text.png" />
 							<textarea name="comments"></textarea>
 						</div>
-						<div><p id="submit">送信</p></div>
+						<input id="submit" type="submit" value="送信" />
 					</form>
-				</div>
-				<small>©　WAP 2013</small>
-			</div>
-		</div>
+				</div><!-- /contact -->
+			</div><!-- /footer_warap -->
+			<div class="clearfix"></div><!-- floatクリア用 -->
+			<div id="copyright"><small>©　WAP 2013</small></div>
+		</div><!-- /footer -->
 	</body>
 </html>
